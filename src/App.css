@@ -1,38 +1,211 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+body {
+  overflow-x: hidden;
+  font-family: Mulish;
+}
+
+/* HOME */
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+  border-left: #444 3px solid;
+}
+
+.div-small {
+  font-size: 14px !important;
+  /* width: 25% !important; */
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-font {
+  font-family: 'Cinzel', serif;
+  font-size: 50px;
+line-height: 80px;
+}
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url('./img/houcine.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   text-align: center;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#video-play {
+  position: relative;
+  min-height: 200px;
+  background: url('./img/lights.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 -300px;
+  text-align: center;
+  color: #fff;
+}
+
+#video-play a {
+  color: #fff;
+}
+
+#main-footer {
+  background: #ffc107;
+  color: #fff;
+}
+
+.head {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffc107;
+
+}
+
+.li {
+  line-height: 45px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fabe {
+background: #ffc107;
+color: black;
+border-radius: 50%;
+width: 42px;
+height: 42px;
+}
+
+.fabe img {
+  background-size: cover;
+  margin: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .carousel-image-1 {
+    background: url('./img/Rectangle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px !important;
+  }
+  
+  .carousel-image-2 {
+    background: url('./img/suad.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px !important;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width: 442px) {
+  .carousel-image-1 {
+    background: url('./img/Rectangle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 170px !important;
+  }
+  
+  .carousel-image-2 {
+    background: url('./img/suad.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 170px !important;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+
+/* ABOUT US */
+#page-header {
+  height: 200px;
+  background: url('./img/houcine.jpg');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.about-img {
+  margin-bottom: -300px;
+}
+
+.div-about {
+  max-width: 1048px !important;
+}
+
+.about {
+  height: 720px;
+  background: #000000;
+}
+
+.m-top {
+  margin-top: 350px;
+}
+
+.marg {
+  margin-top: 1.8rem !important;
+}
+
+#faq .card {
+  border: #444;
+}
+
+#faq a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .m-top {
+    margin-top: 30px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media screen and (max-width: 442px) {
+  .about {
+    height: 800px;
   }
+}
+
+/* Services */
+.header {
+  height: 300px!important;
+}
+
+.marg-1 {
+  margin-top: 100px !important;
+}
+
+.col-md-4 .card {
+  border: none !important;
+}
+
+.col-md-8 .card {
+  border: none !important;
 }
