@@ -1,6 +1,5 @@
 import React from 'react';
 import image from '../img/Rectangle61.png';
-import image1 from '../img/gift.jpg';
 
 const Blog = () => {
   return (
